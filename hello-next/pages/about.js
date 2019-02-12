@@ -1,6 +1,6 @@
 // pages/about.js
 
-import Layout from '../comps/MyLayout.js'
+import Layout from '../components/MyLayout.js'
 
 export default () => (
     <Layout>

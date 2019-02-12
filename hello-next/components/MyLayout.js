@@ -1,4 +1,5 @@
 import Header from './Header'
+import Sidenav from './Sidenav'
 
 const layoutStyle = {
     margin: 20,
@@ -8,6 +9,7 @@ const layoutStyle = {
 
 const Layout = (props) => (
     <div style={layoutStyle}>
+        <Sidenav />
         <Header />
         {props.children}
     </div>
