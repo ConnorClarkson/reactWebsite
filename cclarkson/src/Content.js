@@ -41,10 +41,8 @@ class Content extends Component {
     }
 
     render() {
-        const blurState = this.props.navState ? 'content noblur' : 'content blur';
-
         return (
-            <div className={blurState}>
+            <div >
                 <div className="row">
                     {this.createContent()}
                 </div>

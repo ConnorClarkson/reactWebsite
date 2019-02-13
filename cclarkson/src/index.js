@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Main from './Main';
+import { BrowserRouter } from 'react-router-dom'
 
-import './css/index.scss';
 
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-    <div className="main">
-        <Main />
-    </div>,
+
+
+
+ReactDOM.render((
+        <BrowserRouter>
+            <Main />
+        </BrowserRouter>
+  ),
     document.getElementById('root')
 );
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './css/Nav.scss'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class Nav extends Component {
     render() {
@@ -40,24 +41,36 @@ class Nav extends Component {
 
                         <button className="icon close" onClick={this.props.onClick}></button>
                     </div>
+
+
                     <div className="menuText">
                         <ul>
                             <li>
-                                <h2>Showcase</h2>
-                                <ul className="innerList">
-                                    <li>
-                                        item 1
+                                <Link to='/' onClick={this.props.onClick}>
+                                    <h2>Showcase</h2>
+                                    <ul className="innerList">
+                                        <li>
+                                            item 1
                                     </li>
-                                    <li>
-                                        item 2
+                                        <li>
+                                            item 2
                                     </li>
-                                    <li>
-                                        item 3
+                                        <li>
+                                            item 3
                                     </li>
-                                </ul>
+                                    </ul>
+                                </Link>
                             </li>
-                            <li><h2>Resume</h2></li>
-                            <li><h2>TBC</h2></li>
+                            <li>
+                                <Link to='/resume' onClick={this.props.onClick}>
+                                    <h2>Resume</h2>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/' onClick={this.props.onClick}>
+                                    <h2>TBC</h2>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

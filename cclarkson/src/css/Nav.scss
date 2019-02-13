@@ -161,7 +161,10 @@
 .menuText li h2:hover {
     transform: scale(1.4);
 }
-
+.menuText a {
+    color: black;
+    text-decoration:none;
+}
 .innerList {
     display: none;
 }
