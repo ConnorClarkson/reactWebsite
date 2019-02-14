@@ -14,18 +14,13 @@ class Content extends Component {
 
             return <div key={i} className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 
-                <div className="box-row ">
-                  
+                <div className="box-row ">               
                     <section className="container">
-
                         <img className="content-image" src={image} alt={v.imagealt} />
-
                         <section className="content-info">
                             <h1 className="first-name">{v.first_title}</h1>
-                            <h1 className="second-name">{v.second_title}</h1>
-                            
-                        </section>
-                        
+                            <h1 className="second-name">{v.second_title}</h1>                     
+                        </section>                     
                     </section>
                     <section className="box-row-text">
                         <h2>ABOUT</h2>
