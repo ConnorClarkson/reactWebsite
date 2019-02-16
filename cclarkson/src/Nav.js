@@ -26,14 +26,14 @@ class Nav extends Component {
                                     and was lucky enough to be able to work at the London 2012 Olympics.
                         </p>
 
-                                <aside className="social-media-icons">
+                                <div className="social-media-icons">
                                     <a href="https://www.linkedin.com/in/connorclarkson" target="_blank">
                                         <i className="fab fa-linkedin"></i>
                                     </a>
                                     <a href="https://github.com/sqidge" target="_blank">
                                         <i className="fab fa-github"></i>
                                     </a>
-                                </aside>
+                                </div>
                             </section>
                         </section>
                         <br />
@@ -66,11 +66,7 @@ class Nav extends Component {
                                     <h2>Resume</h2>
                                 </Link>
                             </li>
-                            <li>
-                                <Link to='/' onClick={this.props.onClick}>
-                                    <h2>TBC</h2>
-                                </Link>
-                            </li>
+
                         </ul>
                     </div>
                 </div>

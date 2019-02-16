@@ -10,16 +10,23 @@ class Content extends Component {
             
             const path = v.imageurl
             const image = require('./img/' + path)
-
-
-            return <div key={i} className="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            let secondHeader = v.second_title
+            if (v.hasOwnProperty('second_title_html')) {
+                secondHeader = <a href={v.second_title_html}> {v.second_title}</a>
+            }
+            let github 
+            if (v.hasOwnProperty('github')) {
+               github =  <a className="github" href={v.github} target="_blank"> <i className="fab fa-github fa-3x"></i></a>
+            }
+            return <div key={i} className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 
                 <div className="box-row ">               
-                    <section className="container">
+                    <section className="contentcontainer">
                         <img className="content-image" src={image} alt={v.imagealt} />
                         <section className="content-info">
-                            <h1 className="first-name">{v.first_title}</h1>
-                            <h1 className="second-name">{v.second_title}</h1>                     
+                            <h1 className="tech">{v.first_title}</h1>
+                            <h1 className="project">{secondHeader}</h1>
+                            {github}
                         </section>                     
                     </section>
                     <section className="box-row-text">

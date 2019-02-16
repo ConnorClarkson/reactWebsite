@@ -1,5 +1,17 @@
-{
+﻿{
   "items": [
+    {
+      "dates": "January 2019",
+      "qaulifaction": "AWS Technical Essentials & Developing on AWS",
+      "school": "QA",
+      "icon": "eduIcon"
+    },
+    {
+      "dates": "January 2018",
+      "qaulifaction": "Introduction to Cyber Security",
+      "school": "Open University",
+      "icon": "eduIcon"
+    },
     {
       "dates": "July 2016 - Present",
       "job_title": "Software Engineer",
@@ -23,6 +35,30 @@
       ],
       "icon": "WorkIcon"
 
+    },
+    {
+      "dates": "January 2017",
+      "qaulifaction": "ITIL® Foundation certificate",
+      "school": "BCS",
+      "icon": "eduIcon"
+    },
+    {
+      "dates": "November 2016",
+      "qaulifaction": "Oracle Certified Associate, Java SE 7 Programmer",
+      "school": "Oracle",
+      "icon": "eduIcon"
+    },
+    {
+      "dates": "October 2016",
+      "qaulifaction": "ISTQB-BCS Certiﬁed Tester Foundation Level",
+      "school": "BCS",
+      "icon": "eduIcon"
+    },
+    {
+      "dates": "2013 - 2016",
+      "qaulifaction": "Bachelor's Degree with Hons, Computer Science with Games Development",
+      "school": "The University of Hull",
+      "icon": "eduIcon"
     },
     {
       "dates": "August 2015 - May 2016 ",

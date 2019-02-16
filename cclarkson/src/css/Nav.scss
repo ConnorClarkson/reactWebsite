@@ -189,7 +189,7 @@
     }
 
     .container {
-        height: 86%;
+       
         flex-direction: column;
     }
 
@@ -201,12 +201,12 @@
     .profile-bg {
         width: 100%;
     }
-
-    h1.first-name {
+    
+    .profile-info h1.first-name {
         left: 10px;
     }
 
-    h1.second-name {
+    .profile-info h1.second-name {
         left: 60px;
     }
 }

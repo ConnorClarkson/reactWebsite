@@ -10,9 +10,7 @@
     box-shadow: 0 30px 50px -20px rgba(112, 116, 122, 0.21);
     height: 30vh;
     margin-bottom: 5%;
-    padding-top: 0.5vh;
-    padding-left:1vh;
-    padding-right:1vh;
+    padding:1vh;
 }
 
 .box-row-img {
@@ -22,6 +20,8 @@
 }
 
 .loadingtext {
+    width:100%;
+    text-align:center;
     position: relative;
     top: 100px;
 }
@@ -40,12 +40,26 @@
     width: 0px;
 }
 
-.container {
-    display: flex;
+.contentcontainer {
+    display: inline-flex;
     flex-direction: row;
     align-items: stretch;
-    height:60%;
+    height: 60%;
     width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .box-row-text{
+        display:none;
+    }
+    .row{
+        margin-top:5vh;
+    }
+    .box-row{
+        height:20vh;
+    }
+    .contentcontainer{
+        height:100%;
+    }
 }
 .content-image {
     animation: loadProfileImage 1s ease-in-out 0.5s;
@@ -71,28 +85,36 @@
 
 .content-info {
     margin-top: 100px;
-    padding: 8% 2% 2% 2%;
-    position: relative;
-}
 
+    position: relative;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+.content-info a:visited {
+    color:black;
+}
 .content-info h1 {
-    font-size: 2rem;
-    font-weight: 800;
+    max-width:90%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    font-weight: 700;
     margin: 0.7rem;
     position: absolute;
     animation-fill-mode: both;
 }
 
-.content-info h1.first-name {
+.content-info h1.tech {
     animation: titleEffect 1s cubic-bezier(0,0.2,0.4,1);
     top: -115px;
     left: -5px;
+
 }
 
-.content-info h1.second-name {
+.content-info h1.project {
     animation: titleEffect 1s cubic-bezier(0,0,0.3,1);
     top: -50px;
-
 }
 
 .content-info h2 {
@@ -106,6 +128,12 @@
 .box-row-text h2 {
     text-align:left;
     color: #f63d47;
+}
+
+.github {
+    padding-left:2vh;
+    margin-top: 2vh;
+    position:absolute;
 }
 
 @keyframes ellipsis {

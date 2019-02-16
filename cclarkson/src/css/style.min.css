@@ -186,7 +186,10 @@
 
 }
 .vertical-timeline-element--work .vertical-timeline-element-content {
-    box-shadow: inset 0px 11px 0 #f00
+    box-shadow: inset 0px 11px 0 rgb(51, 167, 247)
+}
+.vertical-timeline-element--education .vertical-timeline-element-content {
+    box-shadow: inset 0px 11px 0 rgb(159, 28, 10)
 }
 .vertical-timeline-element--no-children .vertical-timeline-element-content {
     background: 0 0;
