@@ -48,17 +48,7 @@ class Nav extends Component {
                             <li>
                                 <Link to='/' onClick={this.props.onClick}>
                                     <h2>Showcase</h2>
-                                    <ul className="innerList">
-                                        <li>
-                                            item 1
-                                    </li>
-                                        <li>
-                                            item 2
-                                    </li>
-                                        <li>
-                                            item 3
-                                    </li>
-                                    </ul>
+                                    
                                 </Link>
                             </li>
                             <li>

@@ -12,30 +12,31 @@ class Content extends Component {
             const image = require('./img/' + path)
             let secondHeader = v.second_title
             if (v.hasOwnProperty('second_title_html')) {
-                secondHeader = <a href={v.second_title_html}> {v.second_title}</a>
+                secondHeader = <a className="secondHeader" href={v.second_title_html} target="_blank"> {v.second_title}</a>
             }
             let github 
             if (v.hasOwnProperty('github')) {
                github =  <a className="github" href={v.github} target="_blank"> <i className="fab fa-github fa-3x"></i></a>
             }
-            return <div key={i} className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                
-                <div className="box-row ">               
-                    <section className="contentcontainer">
-                        <img className="content-image" src={image} alt={v.imagealt} />
-                        <section className="content-info">
-                            <h1 className="tech">{v.first_title}</h1>
-                            <h1 className="project">{secondHeader}</h1>
-                            {github}
-                        </section>                     
-                    </section>
-                    <section className="box-row-text">
-                        <h2>ABOUT</h2>
-                        <p>{v.caption}
-                        </p>    
-                    </section>
+            return <div key={i} className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div className="box-row "> 
+                        <div className="contentheader">
+                            <div className="content-img-div">
+                                <img className="content-image" src={image} alt={v.imagealt}  />
+                            </div>
+                            <div className="content-info">
+                                <h1 className="tech">{v.first_title}</h1>
+                                <h1 className="project">{secondHeader}</h1>
+                                {github}
+                            </div>                     
+                        </div>
+                        <div className="box-row-text">
+                            <h2>ABOUT</h2>
+                            <p>{v.caption}
+                            </p>       
+                        </div>
+                    </div>
                 </div>
-            </div>
 
         });
 

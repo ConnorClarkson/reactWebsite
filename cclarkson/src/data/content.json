@@ -1,19 +1,11 @@
 {
 	"items": [
-		{
-			"first_title": "Work in progress",
-			"second_title": "",
-			"caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in magna sed nisi posuere aliquam.",
-			"imageurl": "aws.jpg",
-			"imagealt": "aws-proj"
-
-		},
     {
       "first_title": "Django Website",
       "second_title_html": "http://officialdanc.co.uk",
       "second_title": "officialdanc.co.uk",
       "github": "https://github.com/Sqidge/officialdanc",
-      "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus semper nunc non aliquam. Fusce.",
+      "caption": "I have built a digital presence for a local music producer and friend, to showcase his music and upcoming preformances.",
       "imageurl": "danc.jpg",
       "imagealt": "danc-proj"
     }
